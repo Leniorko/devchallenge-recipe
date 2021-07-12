@@ -258,13 +258,35 @@ section > section[class$="recipe"] {
 
   .main {
     flex-direction: column-reverse;
+    padding-bottom: 64px;
   }
 
   .times {
+    padding: 16px 0 0 0;
+    gap: 0;
     box-shadow: none;
-    flex-direction: row;
+    row-gap: 6px;
     justify-content: space-between;
+    flex-direction: row;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
+  }
+
+  .times__item {
+    width: fit-content;
+  }
+
+  .times__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .times__text-heading {
+    font-size: 8px;
+  }
+
+  .times__text-content {
+    font-size: 10px;
   }
 
   .times__item--accent {

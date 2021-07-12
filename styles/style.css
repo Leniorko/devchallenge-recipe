@@ -245,7 +245,7 @@ section > section[class$="recipe"] {
 
 @media screen and (max-width: 650px) {
   .recepie-heading {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .description__text {

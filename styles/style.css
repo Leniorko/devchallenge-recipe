@@ -71,6 +71,7 @@ body {
 .main {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   padding-bottom: 128px;
 }
 
@@ -240,4 +241,58 @@ section > section[class$="recipe"] {
 
 .footer__author {
   color: var(--footer-color);
+}
+
+@media screen and (max-width: 650px) {
+  .recepie-heading {
+    font-size: 24px;
+  }
+
+  .description__text {
+    font-size: 12px;
+  }
+
+  .cheesecake-img {
+    padding-bottom: 0;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .times {
+    box-shadow: none;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .times__item--accent {
+    width: 100%;
+  }
+
+  .ingredients h2,
+  .instructions h2 {
+    font-size: 18px;
+  }
+
+  section h3 {
+    font-size: 16px;
+  }
+
+  .recepie-checkbox + label {
+    font-size: 14px;
+  }
+
+  .instruction__item {
+    font-size: 16px;
+  }
+
+  .instruction__source {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
 }
